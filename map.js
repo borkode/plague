@@ -22,12 +22,12 @@ for(y++;y<26;){
     for(x++;x<52;){
         ctx.beginPath()
         if(datastr.split('')[retEl(x,y)]==0){
-            strokeStyle=colors[2]
+            ctx.strokeStyle=colors[2]
         }else{
             if(datastr.split('')[retEl(x,y)]==7){
-                strokeStyle=colors[0]
+                ctx.strokeStyle=colors[0]
             }else{
-                strokeStyle=colors[1]
+                ctx.strokeStyle=colors[1]
             }
         }
         ctx.moveTo(x*10,y*10)
