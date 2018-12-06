@@ -18,6 +18,7 @@ var x = 0;
 var y = 0; 
 for(y++;y<26;){
     for(x++;x<52;){
+        setTimeout(function(){
         ctx.beginPath()
         if(datastr.split('')[retEl(x,y)]==0){
             ctx.strokeStyle=colors[2]
@@ -30,7 +31,7 @@ for(y++;y<26;){
         }
         ctx.moveTo(x*10,y*10)
         ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
-        ctx.stroke();
-    }
-}
+        ctx.stroke(); 
+},1);
+}}
 });
