@@ -30,7 +30,8 @@ for(y++;y<26;){
                 strokeStyle=colors[1]
             }
         }
-        ctx.fillRect(0,0,(x+1)*10,(y+1)*10)
+        ctx.moveTo(x*10,y*10)
+        ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
         ctx.stroke();
     }
 }
