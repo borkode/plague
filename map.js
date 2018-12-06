@@ -1,8 +1,8 @@
 function retEl(x,y){
-    return y*ghei+x;
+    return y*26+x;
     }
 function retXY(elid){
-  var pos=[elid%ghei,Math.floor(elid/ghei)]
+  var pos=[elid%26,Math.floor(elid/26)]
     return pos
 }
 
