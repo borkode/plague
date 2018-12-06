@@ -18,7 +18,7 @@ var x = 0;
 var y = 0; 
 
 });
-
+var y = 0; var x = 0;
 for(y++;y<26;){
     for(x++;x<52;){
         setTimeout(function(){
