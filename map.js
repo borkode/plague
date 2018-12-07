@@ -24,7 +24,7 @@ var y = 0;
 
 //});
 var y = 0; var x = 0;
-repeat(function(){
+repeat(function(){x=0;
     repeat(function(){
         setTimeout(function(){
         ctx.beginPath()
@@ -44,4 +44,4 @@ repeat(function(){
          x+=1
 },1);
     },52);
-    y+=1;x=0},26);
+    y+=1;},26);
