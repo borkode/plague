@@ -8,7 +8,7 @@ function retXY(elid){
 
 function repeat(func,times){
     func()
-    --times & repeat(func,times)
+    --times && repeat(func,times)
 }
 
 var canvas = document.getElementById('draw')
