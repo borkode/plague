@@ -43,7 +43,9 @@ repeat(function(){var x = 0;
             console.log("DREW RECT AT " +x+ " , "+y)
         ctx.stroke(); 
          x+=1
-            var y=Math.floor(x/52)
+            if(x==51){
+            y+=1
+            }
 },1);
     },52);
     },26);
