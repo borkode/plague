@@ -43,7 +43,7 @@ repeat(function(){var x = 0;
             console.log("DREW RECT AT " +x+ " , "+y)
         ctx.stroke(); 
          x+=1
-            if(x==51){
+            if(x==52){
             y+=1
             }
 },1);
