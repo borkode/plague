@@ -35,10 +35,11 @@ repeat(function(){
                 ctx.strokeStyle=colors[0]
             }else{
                 ctx.strokeStyle=colors[1]
-            },26);
-        },52);
+            }}
+           
         ctx.moveTo(x*10,y*10)
         ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
         ctx.stroke(); 
 },1);
-}}
+    },26);
+    },52);
