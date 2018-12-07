@@ -39,6 +39,7 @@ repeat(function(){
            
         ctx.moveTo(x*10,y*10)
         ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
+            console.log("DREW RECT AT " +x+ " , "+y)
         ctx.stroke(); 
 },1);
     },26);
