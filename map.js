@@ -6,6 +6,11 @@ function retXY(elid){
     return pos
 }
 
+function repeat(func,times){
+    func()
+    --times & repeat(func,times)
+}
+
 var canvas = document.getElementById('draw')
 var ctx = canvas.getContext('2d');
 
@@ -19,8 +24,8 @@ var y = 0;
 
 //});
 var y = 0; var x = 0;
-for(y++;y<26;){
-    for(x++;x<52;){
+repeat(function(){
+    repeat(function(){
         setTimeout(function(){
         ctx.beginPath()
         if(datastr.split('')[retEl(x,y)]==0){
@@ -30,8 +35,8 @@ for(y++;y<26;){
                 ctx.strokeStyle=colors[0]
             }else{
                 ctx.strokeStyle=colors[1]
-            }
-        }
+            },26);
+        },52);
         ctx.moveTo(x*10,y*10)
         ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
         ctx.stroke(); 
