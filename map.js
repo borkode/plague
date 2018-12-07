@@ -29,12 +29,12 @@ repeat(function(){
         setTimeout(function(){
         ctx.beginPath()
         if(datastr.split('')[retEl(x,y)]==0){
-            ctx.strokeStyle=colors[2]
+            ctx.fillStyle=colors[2]
         }else{
             if(datastr.split('')[retEl(x,y)]==7){
-                ctx.strokeStyle=colors[0]
+                ctx.fillStyle=colors[0]
             }else{
-                ctx.strokeStyle=colors[1]
+                ctx.fillStyle=colors[1]
             }}
            
         ctx.moveTo(x*10,y*10)
