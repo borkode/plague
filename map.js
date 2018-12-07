@@ -24,7 +24,7 @@ var y = 0;
 
 //});
 var y = 0; var x = 0;
-repeat(function(){x=0;
+repeat(function(){var x = 0;
     repeat(function(){
         setTimeout(function(){
         ctx.beginPath()
