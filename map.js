@@ -42,5 +42,5 @@ repeat(function(){
             console.log("DREW RECT AT " +x+ " , "+y)
         ctx.stroke(); 
 },1);
-    x++},52);
     y++},26);
+    x++},52);
