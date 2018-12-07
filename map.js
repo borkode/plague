@@ -41,6 +41,7 @@ repeat(function(){
         ctx.fillRect(x*10,y*10,(x+1)*10,(y+1)*10)
             console.log("DREW RECT AT " +x+ " , "+y)
         ctx.stroke(); 
+         x+=1
 },1);
-    y++},26);
-    x++},52);
+    },26);
+    y+=1},52);
