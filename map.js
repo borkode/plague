@@ -44,11 +44,12 @@ repeat(function(){
         ctx.fillRect(x*ps,y*ps,(x+1)*ps,(y+1)*ps)
         ctx.stroke(); 
          x++
-            if(x==49){
+            if(x==50){
             y++
             x=0
             }
 },1127);
+draw_diseaseMap()
 }
 redraw()
 window.addEventListener('mousemove',function(event){
