@@ -3,13 +3,11 @@ canvas{
     height:276px;
 }
 
-html{
+body{
     background-color:#2D55BE;
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    justify-content:center;
     overflow-x:hidden;
     overflow-y:hidden;
-    vertical-align:middle;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
